@@ -31,7 +31,6 @@ index 5ce3392e4860..2ef3c7305e24 100644
 -  <developer_name>Holy Pangolin</developer_name>
 +  <developer id="com.holypangolin">
 +    <name>Holy Pangolin</name>
-+    <url>https://holypangolin.com</url>
 +  </developer>
  
    <update_contact>dos_AT_dosowisko.net</update_contact>
