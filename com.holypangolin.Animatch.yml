@@ -1,6 +1,6 @@
 id: com.holypangolin.Animatch
 runtime: org.freedesktop.Platform
-runtime-version: "24.08"
+runtime-version: "25.08"
 sdk: org.freedesktop.Sdk
 command: animatch
 rename-icon: animatch
@@ -13,12 +13,10 @@ finish-args:
   - --share=ipc
 cleanup:
   - /include
+  - /lib/cmake
   - /lib/pkgconfig
-  - /lib/*.a
-  - /lib/*.la
-  - /share/aclocal
-  - /share/doc
-  - /bin/test_physfs
+  - /share/man
+  - /share/pixmaps
 modules:
   - name: allegro5
     buildsystem: cmake-ninja
@@ -35,9 +33,12 @@ modules:
         sha256: ab9582b3a8040cf4c086f4f1073dfe38b96fc3343a89b43765b892560437c7e0
       - type: patch
         path: stop-text-input.patch
+
   - name: animatch
     buildsystem: cmake-ninja
     builddir: true
+    config-opts:
+      - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
     sources:
       - type: archive
         url: https://holypangolin.com/stuff/animatch/animatch-1.0.3.tar.gz
