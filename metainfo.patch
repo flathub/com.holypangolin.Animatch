@@ -2,7 +2,7 @@ diff --git a/data/com.holypangolin.Animatch.appdata.xml b/data/com.holypangolin.
 index 5ce3392e4860..2ef3c7305e24 100644
 --- a/data/com.holypangolin.Animatch.appdata.xml
 +++ b/data/com.holypangolin.Animatch.appdata.xml
-@@ -1,26 +1,34 @@
+@@ -1,26 +1,33 @@
  <?xml version="1.0" encoding="UTF-8"?>
  <!-- Copyright 2018-2019 Purism, SPC -->
 +<!-- Copyright 2020-2024 Sebastian Krzyszkowiak <dos@dosowisko.net> -->
@@ -31,9 +31,8 @@ index 5ce3392e4860..2ef3c7305e24 100644
 -  <developer_name>Holy Pangolin</developer_name>
 +  <developer id="com.holypangolin">
 +    <name>Holy Pangolin</name>
-+    <url>https://holypangolin.com</url>
 +  </developer>
- 
+
    <update_contact>dos_AT_dosowisko.net</update_contact>
  
    <custom>
